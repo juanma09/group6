@@ -1,0 +1,376 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .head {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .container img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 60px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+    <title>About Info</title>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <nav class="navbar">
+            <a href="#">Welcome</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Designs</a>       
+        </nav>
+    </div>
+    <section class="content about-info">
+        <h2 class="title">About Us - Team Roles</h2>
+        <div class="container">
+            <section>
+                <a href="fabrirol.html"><img src="IMAGE/fabrizio.jpg" alt="Fabrizio's Photo"></a>
+                <h3>Fabrizio</h3>
+                <p>CEO and Founder</p>
+                <button onclick="document.getElementById('modalFabrizio').style.display='block'">Ver CV</button>
+            </section>
+            <div id="modalFabrizio" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementById('modalFabrizio').style.display='none'">&times;</span>
+                    
+                </div>
+            </div>
+            <section>
+                <a href="santirol.html"><img src="IMAGE/santiago.jpg" alt="Santiago's Photo"></a>
+                <h3>Santiago</h3>
+                <p>Chief Technology Officer (CTO)</p>
+                <button onclick="document.getElementById('modalSantiago').style.display='block'">Ver CV</button>
+            </section>
+            <div id="modalSantiago" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementById('modalSantiago').style.display='none'">&times;</span>
+                    <div class="section">
+                        <div class="section-title">Santiago Ruiz</div>
+                        <div class="subtitle">Industrial Engineering Student</div>
+                        <div class="contact-info">
+                            Phone: (+595) 984670834<br>
+                            Email: sr340123@gmail.com<br>
+                            Address: Mcal. Estigarribia casi Curupayty, Asunción
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">About Me</div>
+                        <p>I am a young and driven student of Industrial Engineering with a strong passion for helping society. I possess analytical skills and a dedication to finding innovative solutions. Committed to continuous learning and professional growth. I actively engage in volunteer work to make a positive impact. With excellent communication and teamwork abilities, I am eager to contribute to the success of any organization.</p>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Languages</div>
+                        <div class="languages">
+                            Spanish: Native or Bilingual Proficiency<br>
+                            English: Professional Working Proficiency<br>
+                            Portuguese: Full Professional Proficiency<br>
+                            Guarani: Limited Working Proficiency
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Skills</div>
+                        <div class="skills">
+                            Microsoft Office Suite<br>
+                            Leadership Development<br>
+                            Fundraising<br>
+                            Accounting
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Education</div>
+                        <div class="education">
+                            Colegio Santa Teresita del Niño Jesús<br>
+                            High School Degree
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Work Experience</div>
+                        <div class="work-experience">
+                            <b>UNEXPA S.A (01/2019-02/2019)</b><br>
+                            Paid Intern: Accounting Assistant
+                            <ul>
+                                <li>Operated the company's Data Program administering its invoices and exports.</li>
+                                <li>Received, examined, classified, and made accounting records of documents.</li>
+                                <li>Elaborated periodic reports about the company’s weekly procedures.</li>
+                            </ul>
+                            <b>ENGLOBAR PY (07/2019 - Present)</b><br>
+                            Coordinator of Training and Volunteers
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Extracurricular Activities</div>
+                        <div class="extracurricular">
+                            <b>Colegio Santa Teresita del Niño Jesús (02/2017-10/2019)</b><br>
+                            <ul>
+                                <li>Recruited over 250 volunteers for diverse activities from over four cities.</li>
+                                <li>Devised weekly meetings and trained volunteers for tutoring homeless children.</li>
+                                <li>Distributed approximately 45 volunteers per week to four orphanages in our city.</li>
+                                <li>Provided homeless children with weekly academic support.</li>
+                            </ul>
+                            <b>Paraguay Scout Association (09/2018 - Present)</b><br>
+                            Organized activities to raise awareness about climate change
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Academic Awards and Achievements</div>
+                        <div class="awards">
+                            <b>OMAPA: National Math Olympiad (2018)</b> - Alto Paraná Champion<br>
+                            <b>Institutional Folk Festival (2019)</b> - First place at Creative Composition
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <section>
+                <a href="nathyrol.html"><img src="IMAGE/nathaly.jpg" alt="Nathaly's Photo"></a>
+                <h3>Nathaly</h3>
+                <p>Director of Product Development</p>
+                <button onclick="document.getElementById('modalNathaly').style.display='block'">Ver CV</button>
+            </section>
+            <div id="modalNathaly" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementById('modalNathaly').style.display='none'">&times;</span>
+                    <div class="section">
+                        <div class="section-title">Nathaly Sosa</div>
+                        <div class="subtitle">Industrial Engineering Student</div>
+                        <div class="contact-info">
+                            Phone: 0981-994-800<br>
+                            Email: nathalysosac@gmail.com<br>
+                            Address: Rio Yhaguy, Teniente ettiene, 1645, Fernando de la Mora, Paraguay
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Profile</div>
+                        <p>I consider myself a responsible and orderly person with great motivation to learn and grow professionally.</p>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Hobbies</div>
+                        <p>Reading, studying, cooking, dancing, helping others.</p>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Education</div>
+                        <div class="education">
+                            Universidad Politécnica Taiwan-Paraguay<br>
+                            Industrial Engineering, Second Year
+                        </div>
+                        <div class="education">
+                            Colegio Las Almenas<br>
+                            2006-2019
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Languages</div>
+                        <div class="languages">
+                            Spanish: Native<br>
+                            English: Intermediate<br>
+                            Chinese: Basic<br>
+                            Guarani: Basic
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Skills and Abilities</div>
+                        <div class="skills">
+                            Problem-solving skills.<br>
+                            Organization and communicative collaborator in critical thinking and planning.<br>
+                            Training production personnel.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <section>
+                <a href="belenrol.html"><img src="IMAGE/belen.jpg" alt="Belen's Photo"></a>
+                <h3>Belen</h3>
+                <p>Chief Marketing Officer (CMO)</p>
+                <button onclick="document.getElementById('modalBelen').style.display='block'">Ver CV</button>
+            </section>
+            <div id="modalBelen" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementById('modalBelen').style.display='none'">&times;</span>
+                    <div class="section">
+                        <div class="section-title">Ana Belen Ojeda Caceres</div>
+                        <div class="subtitle">Industrial Engineering Student</div>
+                        <div class="contact-info">
+                            Phone: (+595) 971993093<br>
+                            Email: belen.ojeda.uptp@gmail.com<br>
+                            Address: Tte. Herrero Bueno c/ Mariscal Estigarribia, Luque, Paraguay
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">About Me</div>
+                        <p>I consider myself an organized and analytical person capable of contributing efficient solutions. I am proactive with a strong motivation to learn and grow professionally.</p>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Personal Objectives</div>
+                        <p>To fully utilize my skills and studies in Industrial Engineering and contribute with my practice and experience. I aim to work on projects impacting users worldwide and learn everything about manufacturing.</p>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Education</div>
+                        <div class="education">
+                            <b>Private School "Maria Auxiliadora"</b><br>
+                            Bachelor's Degree: Technical in Business Administration (2018-2020)
+                        </div>
+                        <div class="education">
+                            <b>Polytechnic University Taiwan-Paraguay</b><br>
+                            Industrial Engineering, Third Year
+                        </div>
+                        <div class="education">
+                            <b>Superior Institute of Languages - National Ministry of Defense</b><br>
+                            English Language Technician (2019-2022)
+                        </div>
+                        <div class="languages">
+                            Languages:<br>
+                            Spanish: Native<br>
+                            English: Advanced<br>
+                            Guarani: Intermediate<br>
+                            Chinese: Basic
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">Work Experience</div>
+                        <div class="work-experience">
+                            <b>ANDE - National Administration of Energy (2019-2020)</b><br>
+                            Intern in Human Resources Department
+                        </div>
+                        <div class="work-experience">
+                            <b>Transword S.R.L (2023)</b><br>
+                            Administrative Assistant
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">References</div>
+                        <div class="references">
+                            Daniel Estigarribia<br>
+                            Phone: (+595) 972 366 964<br>
+                            Email: daniel.estigarribia@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Get the modal
+        var modalFabrizio = document.getElementById('modalFabrizio');
+        var modalSantiago = document.getElementById('modalSantiago');
+        var modalNathaly = document.getElementById('modalNathaly');
+        var modalBelen = document.getElementById('modalBelen');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalFabrizio) {
+                modalFabrizio.style.display = "none";
+            }
+            if (event.target == modalSantiago) {
+                modalSantiago.style.display = "none";
+            }
+            if (event.target == modalNathaly) {
+                modalNathaly.style.display = "none";
+            }
+            if (event.target == modalBelen) {
+                modalBelen.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
